@@ -7,4 +7,8 @@ Hello World Action.
 - License [![LICENSE](https://img.shields.io/github/license/Daniel109012/lab.svg?style=flat-square)](https://github.com/Daniel109012/lab/blob/master/LICENSE)
 - Release [![Releases](https://img.shields.io/github/release/Daniel109012/lab/all.svg?style=flat-square)](https://github.com/Daniel109012/lab/releases)
 
+docker exec -it lab-db-1 mysql -u root -p example
+CREATE USER 'root'@'172.19.0.3' IDENTIFIED BY 'example';
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'172.19.0.2' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
 
